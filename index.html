@@ -1,44 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>IELTS Vocabulary Dashboard</title>
-  <link rel="stylesheet" href="C:\Users\Jaydeep\OneDrive\Desktop\applykart\vocabulary/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vocabulary Glossary</title>
+    <link rel="stylesheet" href="styles.css">
+  
 </head>
 <body>
-  <header>
-    <h1>IELTS Vocabulary Dashboard</h1>
-  </header>
+    <div class="container">
+        <h1>Vocabulary Glossary</h1>
+        <div class="search-filter">
+            <input type="text" id="searchBar" placeholder="Search words...">
+            <select id="filter">
+                <option value="">All</option>
+                <option value="A">A</option>
+                <option value="B">B</option>
+                <option value="C">C</option>
+                <option value="D">D</option>
+                <option value="E">E</option>
+                <option value="F">F</option>
+                <option value="G">G</option>
+                <option value="H">H</option>
+                <option value="I">I</option>
+                <option value="J">J</option>
+                <option value="K">K</option>
+                <option value="L">L</option>
+                <option value="M">M</option>
+                <option value="N">N</option>
+                <option value="O">O</option>
+                <option value="P">P</option>
+                <option value="Q">Q</option>
+                <option value="R">R</option>
+                <option value="S">S</option>
+                <option value="T">T</option>
+                <option value="U">U</option>
+                <option value="V">V</option>
+                <option value="W">W</option>
+                <option value="X">X</option>
+                <option value="Y">Y</option>
+                <option value="Z">Z</option>
+            </select>
+        </div>
+        <div class="word-list" id="wordList"></div>
+        <div class="overlay" id="overlay"></div>
+<div class="popup" id="popup">
+    <h2 id="popupWord"></h2>
+    <p id="popupMeaning"></p>
+    <button class="popup-close" id="popupClose">Close</button>
+</div>
 
-  <main>
-    <section class="dashboard">
-      
-      <div class="dashboard-boxes">
-        <div class="box" id="memorize-box">
-          <div class="icon">📖</div>
-          <h2>Memorize Vocabulary</h2>
-          <p>Learn and memorize new vocabulary with flashcards.</p>
-          <a href="memorize.html" class="button">Explore</a>
-        </div>
-        <div class="box" id="training-box">
-          <div class="icon">🎮</div>
-          <h2>Interactive Training</h2>
-          <p>Engage with interactive exercises to reinforce your learning.</p>
-          <a href="interactive-training.html" class="button">Start Training</a>
-        </div>
-        <div class="box" id="glossary-box">
-          <div class="icon">📚</div>
-          <h2>Vocabulary Glossary</h2>
-          <p>Browse and review all the vocabulary you've learned.</p>
-          <a href="file:///C:/Users/Jaydeep/OneDrive/Desktop/applykart/Vocab/index.html" class="button">View Glossary</a>
-        </div>
-      </div>
-    </section>
-  </main>
+    </div>
+    <script src="script.js"></script>
 
-  <footer>
-    <p>&copy; 2024 IELTS Vocabulary Dashboard</p>
-  </footer>
 </body>
 </html>
